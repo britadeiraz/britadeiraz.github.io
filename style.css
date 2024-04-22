@@ -5,16 +5,21 @@ body {
 }
 
 nav {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(230, 230, 230);
     text-align: center;
     padding: 10px;
 }
 
 nav a {
+    margin: 0px;
+    padding: 0px;
     color: black;
     display: inline-block;
     padding: 10px;
     text-decoration: none;
-    transition: border-radius .35s ease-in-out;
+    transition: border-radius .15s ease-in-out;
 }
 
 nav a:hover {
@@ -26,12 +31,15 @@ nav a:hover {
 }
 
 main {
+    padding: 0px;
+    margin: 0px;
     background-color: rgb(240, 240, 240);
 }
 
 
 .nome {
-    padding-top: 10px;
+    margin: 0px;
+    padding: 20px;
     text-align: center;
     font-weight: 900;
 }
@@ -43,17 +51,45 @@ img {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 50px;
+    transition: border-radius, .35s ease-in;
+}
+
+img:hover {
+    border-radius: 100px;
 }
 
 .conteudo {
-    margin: 20px;
+    margin: 0px;
     padding: 0px;
-    color: red;
+    color: rgb(37, 37, 37);
 }
 
 .sobre-mim {
+    text-align: justify;
     width: 1200px;
-    margin: 15px;
+    margin: 20px 10px;
     padding: 5px;
+}
+
+.resido {
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+#habilidades {
+    width: 400px;
+    border: 1px solid red;
+    color: rgb(37, 37, 37);
+    background-color: #fff;
+    text-align: center;
+}
+
+.javascript,
+.css,
+.html {
+    padding: 10px;
+    list-style-type: none;
 }
