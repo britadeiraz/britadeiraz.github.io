@@ -1,8 +1,15 @@
+:root {
+    --cor-azul: rgb(0, 45, 168);
+    --cor-fundo: rgb(240, 240, 240);
+    --cor-escura: rgb(37, 37, 37);
+}
+
 body {
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     font-family: "Hanken Grotesk", sans-serif;
-    background-color: rgb(240, 240, 240);
+    background-color: var(--cor-fundo);
 }
 
 nav {
@@ -17,7 +24,7 @@ nav a {
     margin: 0px;
     padding: 0px;
     color: black;
-    display: inline-block;
+    display: inline;
     padding: 10px;
     text-decoration: none;
     border-radius: 15px;
@@ -26,9 +33,9 @@ nav a {
 
 nav a:hover {
     color: #fff;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
-    background-color: rgb(37, 37, 37);
+    background-color: var(--cor-escura);
     border-radius: 20px;
 }
 
@@ -37,17 +44,25 @@ main {
     margin: 0px;
 }
 
-
 .nome {
+    color: var(--cor-escura);
     margin: 0px;
-    padding: 20px;
+    padding: 35px;
+    font-size: 50px;
     text-align: center;
     font-weight: 900;
 }
 
-img {
+.conteudoGeral {
+    margin: 0px 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 
-    width: 240px;
+
+img {
+    width: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -61,16 +76,19 @@ img:hover {
 }
 
 .conteudo {
-    margin: 0px;
+    margin: 20px 50px;
     padding: 0px;
-    color: rgb(37, 37, 37);
+    color: var(--cor-escura);
 }
 
 .sobre-mim {
     text-align: justify;
-    width: 1200px;
-    margin: 20px 10px;
+    margin: 0px 20px;
     padding: 5px;
+}
+
+strong {
+    color: var(--cor-azul);
 }
 
 .resido {
@@ -81,8 +99,12 @@ img:hover {
 
 
 .resido a {
-    color: rgb(37, 37, 37);
+    color: var(--cor-escura);
     text-decoration: none;
+}
+
+.resido a:hover {
+    color: var(--cor-azul);
 }
 
 
@@ -100,25 +122,24 @@ img:hover {
 #habilidades {
     background-color: rgb(214, 214, 214);
     border-radius: 20px;
-    color: rgb(37, 37, 37);
+    color: var(--cor-escura);
     margin: 10px;
     padding: 10px;
     width: 4000px;
     text-align: center;
     justify-content: center;
     list-style-type: none;
-    transition: color .25s ease-in-out;
-    transition: background-color 1s ease-in-out;
     transition: width 1s ease-in-out;
+    transition-duration: 1s;
+    cursor: pointer;
 }
 
 #habilidades:hover {
-    transition-delay: 1s;
+    transition-delay: .15s;
     width: 300px;
-    color: #fff;
-    background-color: rgb(37, 37, 37);
     border-radius: 20px;
 }
+
 
 ul {
     margin: 0px;
@@ -135,33 +156,37 @@ ul {
     padding: 10px 2.5px;
     width: 200px;
     text-align: center;
-    background-color: rgb(37, 37, 37);
+    background-color: var(--cor-escura);
     justify-content: center;
     list-style-type: none;
     border-radius: 25px;
+    transition: width .25s ease-in-out;
 }
 
-.javascript:hover  {
+.javascript:hover {
+    width: 100px;
     color: #fff;
-    background-color: rgb(250, 103, 255);
+    background-color: var(--cor-azul);
     cursor: pointer;
 }
 
-.css:hover  {
+.css:hover {
+    width: 100px;
     color: #fff;
-    background-color: rgb(250, 103, 255);
+    background-color: var(--cor-azul);
     cursor: pointer;
 }
 
-.html:hover  {
+.html:hover {
+    width: 100px;
     color: #fff;
-    background-color: rgb(250, 103, 255);
+    background-color: var(--cor-azul);
     cursor: pointer;
 }
 
 .behanceContainer {
     margin: 0px;
-    padding: 15px;
+    padding: 10px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -177,7 +202,7 @@ ul {
     justify-content: center;
     text-align: center;
     text-decoration: none;
-    background-color: rgb(37, 37, 37);
+    background-color: var(--cor-escura);
     border-radius: 15px;
     width: 100px;
     transition: background-color, border-radius .25s ease-in-out;
@@ -185,6 +210,6 @@ ul {
 
 #behance:hover {
     color: #fff;
-    background-color: rgb(250, 103, 255);
+    background-color: var(--cor-azul);
     border-radius: 30px;
 }
