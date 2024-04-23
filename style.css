@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "Hanken Grotesk", sans-serif;
+    background-color: rgb(240, 240, 240);
 }
 
 nav {
@@ -19,6 +20,7 @@ nav a {
     display: inline-block;
     padding: 10px;
     text-decoration: none;
+    border-radius: 15px;
     transition: border-radius .15s ease-in-out;
 }
 
@@ -26,14 +28,13 @@ nav a:hover {
     color: #fff;
     padding: 10px;
     text-decoration: none;
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(37, 37, 37);
     border-radius: 20px;
 }
 
 main {
     padding: 0px;
     margin: 0px;
-    background-color: rgb(240, 240, 240);
 }
 
 
@@ -46,7 +47,7 @@ main {
 
 img {
 
-    width: 300px;
+    width: 240px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -56,7 +57,7 @@ img {
 }
 
 img:hover {
-    border-radius: 100px;
+    border-radius: 150px;
 }
 
 .conteudo {
@@ -73,23 +74,117 @@ img:hover {
 }
 
 .resido {
-    padding: 20px;
     text-align: center;
-
+    margin: 0px;
+    padding: 20px;
 }
 
 
-#habilidades {
-    width: 400px;
-    border: 1px solid red;
+.resido a {
     color: rgb(37, 37, 37);
-    background-color: #fff;
+    text-decoration: none;
+}
+
+
+.listaHabilidades {
+    color: #fff;
+    margin: 0px
+}
+
+.lista {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#habilidades {
+    background-color: rgb(214, 214, 214);
+    border-radius: 20px;
+    color: rgb(37, 37, 37);
+    margin: 10px;
+    padding: 10px;
+    width: 4000px;
     text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    transition: color .25s ease-in-out;
+    transition: background-color 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+#habilidades:hover {
+    transition-delay: 1s;
+    width: 300px;
+    color: #fff;
+    background-color: rgb(37, 37, 37);
+    border-radius: 20px;
+}
+
+ul {
+    margin: 0px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .javascript,
 .css,
 .html {
-    padding: 10px;
+    margin: 5px;
+    padding: 10px 2.5px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    justify-content: center;
     list-style-type: none;
+    border-radius: 25px;
+}
+
+.javascript:hover  {
+    color: #fff;
+    background-color: rgb(250, 103, 255);
+    cursor: pointer;
+}
+
+.css:hover  {
+    color: #fff;
+    background-color: rgb(250, 103, 255);
+    cursor: pointer;
+}
+
+.html:hover  {
+    color: #fff;
+    background-color: rgb(250, 103, 255);
+    cursor: pointer;
+}
+
+.behanceContainer {
+    margin: 0px;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#behance {
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(37, 37, 37);
+    border-radius: 15px;
+    width: 100px;
+    transition: background-color, border-radius .25s ease-in-out;
+}
+
+#behance:hover {
+    color: #fff;
+    background-color: rgb(250, 103, 255);
+    border-radius: 30px;
 }
